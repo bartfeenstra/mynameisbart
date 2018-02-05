@@ -5,7 +5,7 @@ language: generic
 addons:
   apt:
     packages:
-    - snap
+    - snapd
 
 install:
   - sudo snap install hugo

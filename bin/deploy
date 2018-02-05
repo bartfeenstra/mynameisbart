@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd `dirname "$0"`/..
+
+# Exit immediately upon the first error.
+trap exit ERR
+
+hugo
+rsync -r ./public/ mynameisbart.com:/var/www/mynameisbart

@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<section id="home">
+    <ul>
+        {{ range $index, $page := first 1 (where .Site.RegularPages "Section" "articles") }}
+            {{ partial "article" . }}
+        {{ end }}
+    </ul>
+</section>
+
+{{ end }}

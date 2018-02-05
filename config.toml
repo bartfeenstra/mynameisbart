@@ -1,0 +1,5 @@
+baseURL = "http://mynameisbart.com/"
+languageCode = "en-us"
+title = "My name is Bart"
+theme = "kiera"
+sectionPagesMenu = "main"

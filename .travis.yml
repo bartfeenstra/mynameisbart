@@ -1,0 +1,9 @@
+sudo: required
+
+language: generic
+
+install:
+  - snap install hugo
+
+script:
+  - hugo

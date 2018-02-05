@@ -3,6 +3,7 @@ sudo: required
 language: generic
 
 install:
+  - apt-get install snap
   - snap install hugo
 
 script:

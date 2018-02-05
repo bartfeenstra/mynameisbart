@@ -2,8 +2,12 @@ sudo: required
 
 language: generic
 
+addons:
+  apt:
+    packages:
+    - snap
+
 install:
-  - apt-get install snap
   - snap install hugo
 
 script:

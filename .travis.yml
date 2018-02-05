@@ -11,4 +11,4 @@ install:
   - sudo snap install hugo
 
 script:
-  - hugo
+  - /snap/bin/hugo

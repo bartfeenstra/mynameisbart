@@ -1,11 +1,43 @@
 {{ define "main" }}
 
 <section id="home">
-    <ul>
+    <section id="top-terms">
+        <section class="top-terms-taxonomy">
+            <h2>Projects</h2>
+            <ul>
+            {{ range first 3 .Site.Taxonomies.Projects.ByCount }}
+                <li><a href="projects/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            {{ end }}
+            </ul>
+        </section>
+        <section class="top-terms-taxonomy">
+            <h2>Languages</h2>
+            <ul>
+            {{ range first 3 .Site.Taxonomies.Languages.ByCount }}
+                <li><a href="languages/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            {{ end }}
+            </ul>
+        </section>
+            <section class="top-terms-taxonomy">
+            <h2>Software</h2>
+            <ul>
+            {{ range first 3 .Site.Taxonomies.Software.ByCount }}
+                <li><a href="software/{{ .Name | urlize }}">{{ .Name }}</a></li>
+            {{ end }}
+            </ul>
+        </section>
+    </section>
+
+    <section id="latest-article">
         {{ range $index, $page := first 1 (where .Site.RegularPages "Section" "articles") }}
-            {{ partial "article" . }}
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ partial "aside" . }}
+            <p>{{ .Summary }}</p>
+            {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}">Read more&hellip;</a>
+            {{ end }}
         {{ end }}
-    </ul>
+    </section>
 </section>
 
 {{ end }}

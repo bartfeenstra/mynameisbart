@@ -3,3 +3,9 @@ languageCode = "en-us"
 title = "My name is Bart"
 theme = "kiera"
 sectionPagesMenu = "main"
+preserveTaxonomyNames = true
+
+[taxonomies]
+    languages = "Languages"
+    software = "Software"
+    projects = "Projects"

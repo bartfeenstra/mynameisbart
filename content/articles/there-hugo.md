@@ -1,6 +1,14 @@
 ---
 title: "There Hugo"
 date: 2018-02-05T12:28:14+01:00
+projects:
+    - mynameisbart.com
+languages:
+    - PHP
+    - Go
+software:
+    - Drupal
+    - Hugo
 ---
 
 This site has now migrated from [Drupal](https://drupal.org), a content management system made in [PHP](https://php.net), to [Hugo](http://gohugo.io/), a static site generator written in [Go](https://golang.org/).

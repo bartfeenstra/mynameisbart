@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-cd `dirname "$0"`/..
+set -Eeuo pipefail
+
+cd "$(dirname "$0")/.."
 
 # Exit immediately upon the first error.
 trap exit ERR
 
-hugo
+./bin/generate
 rsync -r ./public/ mynameisbart.com:/var/www/mynameisbart

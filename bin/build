@@ -14,3 +14,5 @@ krab_tag='0.3'
 git -C ./vendor/krab tag --delete "$krab_tag" || true
 git -C ./vendor/krab fetch
 git -C ./vendor/krab checkout "$krab_tag"
+
+find ./build -type f -print0 | sort -z | xargs -0 ./vendor/krab/bin/krab run

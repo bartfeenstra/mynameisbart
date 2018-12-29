@@ -1,0 +1,133 @@
+/** Layout **/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+    max-width: 50em;
+}
+
+#header nav {
+    margin-top: 1em;
+}
+
+#content {
+    margin: 3em 0;
+}
+
+/** Navigation **/
+#site-title {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#site-title a {
+    color: white;
+}
+
+#site-title a:hover {
+    color: #009900;
+}
+
+#header nav ul {
+    background-color: #333333;
+    padding: 1em 0.5em;
+}
+
+#header nav li {
+    display: inline;
+    list-style: none;
+}
+
+#header nav a {
+    background-color: #111111;
+    display: inline-block;
+    padding: 1em;
+}
+
+#header nav a:hover {
+    background-color: #009900;
+    color: white;
+}
+
+/** Text **/
+body {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+#content {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    margin-top: 2em;
+}
+
+blockquote {
+    border-width: 0 0 0 0.5em;
+    border-color: #333333;
+    border-style: solid;
+    padding: 0 3em 0 3em;
+    position: relative;
+}
+
+blockquote::before, blockquote::after {
+    font-size: 3em;
+    color: #333333;
+    line-height: 1em;
+    position: absolute;
+}
+
+blockquote::before {
+    content: "“";
+    left: 0;
+    top: 0;
+}
+
+blockquote::after {
+    content: "”";
+    right: 0;
+    bottom: 0;
+}
+
+/** Links **/
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009900;
+}
+
+/** Code **/
+code {
+    display: block;
+    background-color: #111111;
+    border-width: 1em 0.5em;
+    border-color: #333333;
+    border-style: solid;
+    font-family: monospace;
+    overflow: scroll;
+    padding: 0.5em;
+    unicode-bidi: embed;
+    white-space: pre;
+}
+
+/** Lists **/
+ul {
+    list-style-type: square;
+}

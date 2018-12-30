@@ -1,5 +1,14 @@
 baseURL = "http://mynameisbart.com/"
 languageCode = "en-us"
 title = "My name is Bart"
-theme = "kiera"
+description = ""
+theme = "terminal"
 sectionPagesMenu = "main"
+
+# Syntax highlighting.
+pygmentsOptions = "linenos=true"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[author]
+    name = "Bart Feenstra"

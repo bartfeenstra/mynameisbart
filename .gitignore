@@ -1,2 +1,7 @@
+# Artifacts.
 /public
+
+# Third-party files.
+/node_modules
 /vendor
+

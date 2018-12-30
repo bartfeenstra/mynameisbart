@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+cd "$(dirname "$0")/.."
+
+./node_modules/stylelint/bin/stylelint.js ./themes/terminal/static/css

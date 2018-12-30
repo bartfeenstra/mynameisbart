@@ -1,0 +1,12 @@
+<section id="header">
+    <div id="site-title">
+        <a href="{{ "" | relURL }}">My name is Bart</a>
+    </div>
+    <nav class="nav">
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</section>

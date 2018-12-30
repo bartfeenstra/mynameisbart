@@ -1,0 +1,151 @@
+/** Layout **/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 25px;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+    max-width: 50em;
+}
+
+#header nav {
+    margin-top: 1em;
+}
+
+#content {
+    margin: 3em 0;
+}
+
+/** Navigation **/
+#site-title {
+    border-bottom: 0.5em solid #333333;
+    height: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 30em) {
+    #site-title {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    #site-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    #site-title {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    #site-title {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 70em) {
+    #site-title {
+        font-size: 3.5em;
+    }
+}
+
+#site-title a {
+    color: white;
+}
+
+#site-title a:hover {
+    color: #009900;
+}
+
+.nav li {
+    display: inline;
+    list-style: none;
+}
+
+.nav a {
+    background-color: #111111;
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 1em;
+}
+
+.nav a:hover {
+    background-color: #009900;
+    color: white;
+}
+
+/** Text **/
+body {
+    color: white;
+    font-family: monospace;
+}
+
+#content {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    margin-top: 2em;
+}
+
+blockquote {
+    border-width: 0 0 0 0.5em;
+    border-color: #333333;
+    border-style: solid;
+    padding: 0 3em 0 3em;
+    position: relative;
+}
+
+blockquote::before, blockquote::after {
+    font-size: 3em;
+    color: #333333;
+    line-height: 1em;
+    position: absolute;
+}
+
+blockquote::before {
+    content: "“";
+    left: 0;
+    top: 0;
+}
+
+blockquote::after {
+    content: "”";
+    right: 0;
+    bottom: 0;
+}
+
+/** Links **/
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009900;
+}
+
+/** Lists **/
+ul {
+    list-style-type: square;
+}

@@ -113,20 +113,6 @@ a:hover {
     color: #009900;
 }
 
-/** Code **/
-code {
-    display: block;
-    background-color: #111111;
-    border-width: 1em 0.5em;
-    border-color: #333333;
-    border-style: solid;
-    font-family: monospace;
-    overflow: scroll;
-    padding: 0.5em;
-    unicode-bidi: embed;
-    white-space: pre;
-}
-
 /** Lists **/
 ul {
     list-style-type: square;

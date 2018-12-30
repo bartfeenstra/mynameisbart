@@ -5,5 +5,10 @@ description = ""
 theme = "terminal"
 sectionPagesMenu = "main"
 
+# Syntax highlighting.
+pygmentsOptions = "linenos=true"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 [author]
     name = "Bart Feenstra"

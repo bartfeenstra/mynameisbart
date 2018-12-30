@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    font-size: 25px;
+}
+
 body {
     background-color: black;
     width: 100%;
@@ -24,8 +28,41 @@ body {
 
 /** Navigation **/
 #site-title {
-    font-size: 5em;
+    border-bottom: 0.5em solid #333333;
+    height: 0.75em;
     font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 30em) {
+    #site-title {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    #site-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+    #site-title {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    #site-title {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width: 70em) {
+    #site-title {
+        font-size: 3.5em;
+    }
 }
 
 #site-title a {
@@ -36,23 +73,19 @@ body {
     color: #009900;
 }
 
-#header nav ul {
-    background-color: #333333;
-    padding: 1em 0.5em;
-}
-
-#header nav li {
+.nav li {
     display: inline;
     list-style: none;
 }
 
-#header nav a {
+.nav a {
     background-color: #111111;
     display: inline-block;
+    margin-top: 0.5em;
     padding: 1em;
 }
 
-#header nav a:hover {
+.nav a:hover {
     background-color: #009900;
     color: white;
 }
@@ -61,7 +94,6 @@ body {
 body {
     color: white;
     font-family: monospace;
-    font-size: 25px;
 }
 
 #content {

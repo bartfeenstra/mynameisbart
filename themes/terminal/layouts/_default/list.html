@@ -12,7 +12,7 @@
 
     {{ .Content }}
 
-    {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups  }}
+    {{ range (.Data.Pages.GroupByDate "2006") }}
 
     <h3>{{ .Key }}</h3>
     <ul>

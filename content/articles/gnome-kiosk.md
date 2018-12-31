@@ -29,7 +29,7 @@ log-in session after the screen has gone blank or the machine has been suspended
 requires no authentication at all. Extend `/etc/pam.d/gdm-password` with the following line, where `bart` must again be
 replaced with the name of your unprivileged user:
 ```
-auth sufficient pam_succeed_if.so user == bart
+auth sufficient pam_succeed_if.so user = bart
 ```
 Whenever Linux tries to *authenticate* a user called `bart`, that is *sufficient*, and no other steps, such as a
 password, are necessary. This effectively disables any authentication for this user.

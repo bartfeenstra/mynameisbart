@@ -1,5 +1,6 @@
 # Artifacts.
 /public
+/resources
 
 # Third-party files.
 /node_modules

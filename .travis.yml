@@ -7,8 +7,12 @@ addons:
     packages:
     - snapd
 
+before_install:
+  - export PATH=$PATH:/snap/bin
+
 install:
-  - sudo snap install hugo
+  - sudo snap install --channel=extended hugo
+  - ./bin/build
 
 script:
-  - /snap/bin/hugo
+  - ./bin/test

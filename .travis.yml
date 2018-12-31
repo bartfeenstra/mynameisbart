@@ -8,7 +8,8 @@ addons:
     - snapd
 
 install:
-  - sudo snap install hugo
+  - sudo snap install --channel=extended hugo
+  - ./bin/build
 
 script:
-  - /snap/bin/hugo
+  - ./bin/test

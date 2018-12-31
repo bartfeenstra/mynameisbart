@@ -1,3 +1,9 @@
+$highlight: #00ff00;
+$lowlight: #009900;
+$highshade: #333333;
+$lowshade: #111111;
+$aside: #aaaaaa;
+
 /** Layout **/
 * {
     padding: 0;
@@ -28,7 +34,7 @@ body {
 
 /** Navigation **/
 #site-title {
-    border-bottom: 0.5em solid #333333;
+    border-bottom: 0.5em solid $highshade;
     height: 0.75em;
     font-weight: bold;
     text-align: center;
@@ -70,7 +76,7 @@ body {
 }
 
 #site-title a:hover {
-    color: #009900;
+    color: $lowlight;
 }
 
 .nav li {
@@ -79,14 +85,14 @@ body {
 }
 
 .nav a {
-    background-color: #111111;
+    background-color: $lowshade;
     display: inline-block;
     margin-top: 0.5em;
     padding: 1em;
 }
 
 .nav a:hover {
-    background-color: #009900;
+    background-color: $lowlight;
     color: white;
 }
 
@@ -123,7 +129,7 @@ h3 {
 
 blockquote {
     border-width: 0 0 0 0.5em;
-    border-color: #333333;
+    border-color: $highshade;
     border-style: solid;
     padding: 0 3em 0 3em;
     position: relative;
@@ -131,7 +137,7 @@ blockquote {
 
 blockquote::before, blockquote::after {
     font-size: 3em;
-    color: #333333;
+    color: $highshade;
     line-height: 1em;
     position: absolute;
 }
@@ -150,12 +156,12 @@ blockquote::after {
 
 /** Links **/
 a {
-    color: #00ff00;
+    color: $highlight;
     text-decoration: none;
 }
 
 a:hover {
-    color: #009900;
+    color: $lowlight;
 }
 
 /** Lists **/
@@ -165,5 +171,5 @@ ul {
 
 /** Content **/
 aside.meta {
-    color: #aaaaaa;
+    color: $aside;
 }

@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ .Site.Params.description }}" />
     <meta name="author" content="{{ .Site.Author.name }}" />
-    <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL }}" />
-    <link rel="stylesheet" type="text/css" href="{{ "css/syntax.css" | relURL }}" />
+    {{ $theme := resources.Get "css/theme.scss" | toCSS}}
+    {{ $syntax := resources.Get "css/syntax.css" }}
+    {{ $styles := slice $theme $syntax | resources.Concat "css/styles.css" | resources.Minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>

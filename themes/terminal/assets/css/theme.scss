@@ -173,3 +173,13 @@ ul {
 aside.meta {
     color: $aside;
 }
+
+/** Code **/
+code {
+    background-color: #272822;
+    color: #f8f8f2;
+}
+
+.lntable .lntd:first-child .chroma {
+  background-color: $lowshade;
+}

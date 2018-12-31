@@ -1,11 +1,5 @@
 <article>
-
-    <h1><a href="{{.URL}}">{{ .Title }}</a></h1>
-
-    {{ if not .Params.meta }}
-        {{ partial "aside" . }}
-    {{ end }}
-
-    {{.Content}}
-
+    <h1>{{ .Title }}</h1>
+    {{ partial "meta" . }}
+    {{ .Content  }}
 </article>

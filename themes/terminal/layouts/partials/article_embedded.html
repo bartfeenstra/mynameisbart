@@ -1,0 +1,6 @@
+<article>
+    <h2><a href="{{.URL}}">{{ .Title }}</a></h2>
+    {{ partial "meta" . }}
+    {{ .Content | truncate 500 }}
+    <p><a href="{{.URL}}">Read more...</a></p>
+</article>

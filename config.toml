@@ -4,6 +4,7 @@ title = "My name is Bart"
 description = ""
 theme = "terminal"
 sectionPagesMenu = "main"
+enableGitInfo = true
 
 # Syntax highlighting.
 pygmentsOptions = "linenos=true"

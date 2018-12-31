@@ -5,13 +5,14 @@ theme = "terminal"
 sectionPagesMenu = "main"
 enableGitInfo = true
 
-[params]
-    description = "About software engineering, automation, programming, and other techonolgy."
-
 # Syntax highlighting.
 pygmentsOptions = "linenos=true"
 pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
+
+[params]
+    description = "About software engineering, automation, programming, and other techonolgy."
 
 [author]
     name = "Bart Feenstra"

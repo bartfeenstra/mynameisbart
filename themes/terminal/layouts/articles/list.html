@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section>
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range .Data.Pages }}
+        {{ partial "article_embedded" . }}
+    {{ end }}
+
+
+</section>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

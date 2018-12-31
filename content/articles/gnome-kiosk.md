@@ -24,10 +24,10 @@ AutomaticLogin = bart
 
 ## Passwordless authentication
 We have told Linux which user to log in automatically, but this will still require a password when resuming an existing
-log-in session after the screen has gone blank or the machine has been suspended.  We'll use
-[PAM](https://en.wikipedia.org/wiki/Linux_PAM) [config files](https://linux.die.net/man/5/pam.d) to tell Linux our user
-requires no authentication at all. Extend `/etc/pam.d/gdm-password` with the following line, where `bart` must again be
-replaced with the name of your unprivileged user:
+log-in session after the screen has gone blank or the machine has been suspended. We'll use a
+[PAM](https://en.wikipedia.org/wiki/Linux_PAM) [config file](https://linux.die.net/man/5/pam.d) to tell Linux our user
+requires no authentication at all. Edit `/etc/pam.d/gdm-password` and put the following line at the beginning of the
+file, where `bart` must again be replaced with the name of your unprivileged user:
 ```
 auth sufficient pam_succeed_if.so user = bart
 ```

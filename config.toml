@@ -1,10 +1,12 @@
-baseURL = "http://mynameisbart.com/"
+baseURL = "https://mynameisbart.com/"
 languageCode = "en-us"
-title = "My name is Bart"
-description = ""
+title = "Bart Feenstra"
 theme = "terminal"
 sectionPagesMenu = "main"
 enableGitInfo = true
+
+[params]
+    description = "About software engineering, automation, programming, and other techonolgy."
 
 # Syntax highlighting.
 pygmentsOptions = "linenos=true"

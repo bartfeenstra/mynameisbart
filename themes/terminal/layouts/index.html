@@ -1,9 +1,7 @@
 {{ define "main" }}
 
-<section>
-    {{ range $index, $page := first 3 (where .Site.RegularPages "Section" "articles") }}
-        {{ partial "article_embedded" . }}
-    {{ end }}
-</section>
+{{ range $index, $page := first 3 (where .Site.RegularPages "Section" "articles") }}
+    {{ partial "article_embedded" . }}
+{{ end }}
 
 {{ end }}
